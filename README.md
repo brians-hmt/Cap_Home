@@ -13,12 +13,12 @@ As home purchases are a very personal and emotional decision, it is expected tha
 This report summarizes the work in the following Jupyter Notebook: <https://github.com/brians-hmt/Cap_Home/blob/main/capstone.ipynb>
 
 
-### Rationale
+## Rationale
 
 This question should be important to any real-estate buyer or seller, because it should point to those home features that represent an opportunity for financial benefit.  E.G.  The appearance of quality can significantly drive selling price.  Thus, one might want to buy a house that has good bones but has relatively easy ways to improve either the quality of the house or the appearance of the quality of the house.
 
 
-### Research Question:
+## Research Question
 
 What factors have a significant impact upon house prices?
 
@@ -28,19 +28,20 @@ I expect that there is an initial decrease in value as lot slope increases from 
 It should be noted that housing data sets often do not contain an indication as to whether a property has a view. However, this could be hinted at by the PosA indicator (adjacent to a positive feature) in the Condition 1 or Condition 2 columns.
 
 
-### Data Sources:
+## Data Sources
 
 There are many datasets with average housing data for specific communities. However, we need raw housing data containing individual sales. Ideally, this data would contain many columns of data that are not readily found in the many of the public data sets, e.g. Zillow housing data.
 We will use the data in Deepak Sethi’s “house-prices-advanced-regression-techniques”. (https://www.kaggle.com/datasets/deepaksethi/housepricesadvancedregressiontechniques)
 
 
-### Methodology:
+## Methodology
 
 The prediction of house price is essentially a regression problem. Thus, we will compare various regression techniques, such as Linear, Polynomial, Ridge, and Lasso regression.
-Although the dataset has no labels indicating if properties have a view, we will look to see if the price data can be separated into two sets with different price computations.  
+ For now, we have only used a linear regression.  
 
 
-### Expected Results:
+## Results
+### Expected Results
 
 That the lot-size, house-size, # bedrooms, # bathrooms have the largest impact upon house price, and house condition (i.e. quality) have the biggest impact upon sales price.
 That house condition is a bigger driver of price than is house age.
@@ -48,7 +49,7 @@ That view-properties can be determined by their asking price with some accuracy.
 That having a view is a substantial driver of price.
 
 
-## Actual Results:
+## Actual Results
 
 We examined the coefficients from the trained models.  The results appear to confirm our earlier suggestion that kitchens above ground have a negative impact upon the sales price.  <br><br>  
 
@@ -59,9 +60,6 @@ With our model, we see a negative value for averge (ALQ) basement finish type an
 Because there is such a high negative correlation ~$8.4k with having a basement half bath and only an ~$3.4k value to having this as an extra half bath, one might consider removing this half bath ... as long as tearing it out doesn't cost more than $5k.  In other words, this might only make sense for an owner to do and not an investor. <br><br>
 
 The Test RMSE above indicates that our price estimate is off by $26.4k on average, which is a fairly significant proportion of the $180k mean housing price of the dataset.  One's instinct would be to assume that this error is an error in the model.  Certainly, futher models should be explored including an ensemble model to see if this error can be reduced.  The hope is that this accuracy could be improved.  However, it is possible that this error is not necessarily an error in the model but an error in how home sellers have priced their properties, an error in the offers that buyers have made, and and error in what offers that sellers have accepted.  The pricing of homes is a human endeavour and is subject to emotion.  These are features that are not easy to identify.  They also represent opportunities that a model such as this can seek to exploit. 
-
-
-### Evaluation:
 
 Although our dataset has many features that we can evaluate for their impact upon price, we are limited in the total number of rows of data.  More specifically, much of the categorical data is limited in the number of each value that is present in the data.  We delt with this by combining rare data in to a category 'Other'.  This approach is only helpful if the remaining categorical values are significantly different from those that are grouped together.  In the simplest case (with two categorical values), this is a way of stating that a category is either one thing or not that thing.  In other words, this simply reduces the number of columns when one-hot encoding. <br><br>
 
@@ -77,12 +75,12 @@ There are many home features that impact price that we cannot change, such as th
 In addition, there are a few unexpected items that have a negative impact upon the sale price that could be changed (if they are not in good repair).  Among these are having a half-bath in the basement and having a kitchen on an upper floor.  When looking for a property to purchase, these might be features to consider, especially if in disrepair.
 
 
-## Next Steps:
+## Next Steps
 
 We intend to continue this effort by creating and comparing additional models in the hope that we can reduce the test error.  We will try other model, such as a Ridge Regression, Lasso Regression, and an Ensemble technique.
 
 
-
+## Outline of Project
 
 ## Data Cleaning
 
@@ -272,6 +270,7 @@ This model was first trained and tested on only the numeric features.  The model
 | Numeric Only	| $23,525		| $28,017 |
 | All Features	| $18,794		| $26,411 |
 | Reduced Feat.	| $18,813    	| $26,403 |
+
 
 
 
