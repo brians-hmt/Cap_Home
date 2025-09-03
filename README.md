@@ -181,7 +181,7 @@ Of the values that we previously observed a high correlation, we should:
 
 A heatmap was generated showing the correlation of all of the numeric values, which is shown below.  This shows a high correlation rate among the employment variability rate, the euribor3m, and the number of unemployed.  For the first run of modeling, he euribor3m was kept and the other 2 features were dropped.  Later, the PCA was used to combine these 3 variables, thereby reducing the dimensionality of the data. However, re-running the models did not show significant changes in model test accuracy.
 
-![alt text](images/Numeric Corr Heatmap.jpg)
+![alt text](images/NumericCorrHeatmap.jpg)
 
 
 ### Most Significant Numeric Features
@@ -254,5 +254,6 @@ In addition, there are a few unexpected items that have a negative impact upon t
 ## Next Steps
 
 We intend to continue this effort by creating and comparing additional models in the hope that we can reduce the test error.  We will try other model, such as a Ridge Regression, Lasso Regression, and an Ensemble technique.
+
 
 
