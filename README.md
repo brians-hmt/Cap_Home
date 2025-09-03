@@ -51,26 +51,27 @@ We looked for duplicate data but found that no rows were duplicated.
 
 We found that several columns were missing data as indicated in the following list:
 
-         Feature  NumNulls    
-0    LotFrontage       259  
-1          Alley      1369   
-2     MasVnrType       872   
-3     MasVnrArea         8  
-4       BsmtQual        37   
-5       BsmtCond        37   
-6   BsmtExposure        38   
-7   BsmtFinType1        37   
-8   BsmtFinType2        38   
-9     Electrical         1   
-10   FireplaceQu       690   
-11    GarageType        81   
-12   GarageYrBlt        81  
-13  GarageFinish        81   
-14    GarageQual        81   
-15    GarageCond        81   
-16        PoolQC      1453   
-17         Fence      1179   
-18   MiscFeature      1406   
+| | Feature | NumNulls |
+|:---:|:---:|:---:|
+| 0  | LotFrontage  | 259  |
+| 1  | Alley        | 1369 |  
+| 2  | MasVnrType   | 872  | 
+| 3  | MasVnrArea   | 8    |
+| 4  | BsmtQual     | 37   |
+| 5  | BsmtCond     | 37   |
+| 6  | BsmtExposure | 38   |
+| 7  | BsmtFinType1 | 37   |
+| 8  | BsmtFinType2 | 38   |
+| 9  | Electrical   | 1    |
+| 10 | FireplaceQu  | 690  | 
+| 11 | GarageType   | 81   |
+| 12 | GarageYrBlt  | 81   |
+| 13 | GarageFinish | 81   |
+| 14 | GarageQual   | 81   |
+| 15 | GarageCond   | 81   |
+| 16 | PoolQC       | 1453 |  
+| 17 | Fence        | 1179 |  
+| 18 | MiscFeature  | 1406 |  
 
 
 Handling Approach:
@@ -254,6 +255,7 @@ In addition, there are a few unexpected items that have a negative impact upon t
 ## Next Steps
 
 We intend to continue this effort by creating and comparing additional models in the hope that we can reduce the test error.  We will try other model, such as a Ridge Regression, Lasso Regression, and an Ensemble technique.
+
 
 
 
