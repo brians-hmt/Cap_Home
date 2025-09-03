@@ -10,8 +10,6 @@ The goal with this project was to create a tool / model that a buyer or investor
 
 As home purchases are a very personal and emotional decision, it is expected that the actual prices paid will vary considerably from any model.  This "emotional-variance" represents a potential financial opportunity for a buyer or seller.  From the intial modeling performed, there does appear to be significant deviation (RMSE) from what the model predicts.  The expectation is that the addition of more models will give us a better idea of how much of this RMSE is model error and how much is potential buyer opportunity.
 
-This report summarizes the work in the following Jupyter Notebook: <https://github.com/brians-hmt/Cap_Home/blob/main/capstone.ipynb>
-
 
 ## Rationale
 
@@ -81,6 +79,8 @@ We intend to continue this effort by creating and comparing additional models in
 
 
 ## Outline of Project
+
+This report summarizes the work in the following Jupyter Notebook: <https://github.com/brians-hmt/Cap_Home/blob/main/capstone.ipynb>
 
 ## Data Cleaning
 
@@ -270,6 +270,7 @@ This model was first trained and tested on only the numeric features.  The model
 | Numeric Only	| $23,525		| $28,017 |
 | All Features	| $18,794		| $26,411 |
 | Reduced Feat.	| $18,813    	| $26,403 |
+
 
 
 
