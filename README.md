@@ -187,6 +187,8 @@ A heatmap was generated showing the correlation of all of the numeric values, wh
 
 ### Most Significant Numeric Features
 
+![alt text](images/FeatureSig.jpg)
+
 Most of the correlations listed in the heat map make intuitive sense.  <br> 
 The house quality, above-ground square footage, garage size, basement size, 1st floor size, and house newness have the most impact upon sales price.  <br>
 There are, however, a few surprises:  Enclosed Porch, Kitchen Above Ground, Overall Condition, and Low Quality Finish Square Footage have a negative impact upon the price.  <br><br>
@@ -218,7 +220,7 @@ A simple linear regression model was used for our baseline model.  This model wa
 This model was first trained and tested on only the numeric features.  The model was then trained and tested on all features.  Then, the following features were removed, because they have low correlation values with Sale Price:  'MiscVal', '3SsnPorch', 'LandSlope', 'PavedDrive', 'ScreenPorch', 'Electrical', 'EnclosedPorch', and 'BsmtCond'.  This reduced dataset was then used to train and test the model for a third time.
 
 | Dataset | Train RMSE | Test RMSE |
-|:--:|---:|---:|
+|:---|---:|---:|
 | Numeric Only	| $23,525		| $28,017 |
 | All Features	| $18,794		| $26,411 |
 | Reduced Feat.	| $18,813    	| $26,403 |
@@ -256,6 +258,7 @@ In addition, there are a few unexpected items that have a negative impact upon t
 ## Next Steps
 
 We intend to continue this effort by creating and comparing additional models in the hope that we can reduce the test error.  We will try other model, such as a Ridge Regression, Lasso Regression, and an Ensemble technique.
+
 
 
 
