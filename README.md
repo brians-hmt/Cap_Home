@@ -189,7 +189,7 @@ A heatmap was generated showing the correlation of all of the numeric values, wh
 
 ### Most Significant Numeric Features
 
-![alt text](images/FeatureSig.jpg){height=66%}
+<img src=images/FeatureSig.jpg height=66%>
 
 Most of the correlations listed in the heat map make intuitive sense.  <br> 
 The house quality, above-ground square footage, garage size, basement size, 1st floor size, and house newness have the most impact upon sales price.  <br>
@@ -260,6 +260,7 @@ In addition, there are a few unexpected items that have a negative impact upon t
 ## Next Steps
 
 We intend to continue this effort by creating and comparing additional models in the hope that we can reduce the test error.  We will try other model, such as a Ridge Regression, Lasso Regression, and an Ensemble technique.
+
 
 
 
