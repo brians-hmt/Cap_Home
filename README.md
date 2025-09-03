@@ -52,7 +52,7 @@ We looked for duplicate data but found that no rows were duplicated.
 We found that several columns were missing data as indicated in the following list:
 
 | | Feature | NumNulls |
-|:---:|:---:|:---:|
+|---:|:---|---:|
 | 0  | LotFrontage  | 259  |
 | 1  | Alley        | 1369 |  
 | 2  | MasVnrType   | 872  | 
@@ -217,10 +217,11 @@ A simple linear regression model was used for our baseline model.  This model wa
 
 This model was first trained and tested on only the numeric features.  The model was then trained and tested on all features.  Then, the following features were removed, because they have low correlation values with Sale Price:  'MiscVal', '3SsnPorch', 'LandSlope', 'PavedDrive', 'ScreenPorch', 'Electrical', 'EnclosedPorch', and 'BsmtCond'.  This reduced dataset was then used to train and test the model for a third time.
 
-Dataset  	Train RMSE	Test RMSE
-Numeric Only	$23,525		$28,017
-All Features	$18,794		$26,411
-Reduced Feat.	$18,813    	$26,403
+| Dataset | Train RMSE | Test RMSE |
+|:--:|---:|---:|
+| Numeric Only	| $23,525		| $28,017 |
+| All Features	| $18,794		| $26,411 |
+| Reduced Feat.	| $18,813    	| $26,403 |
 
 
 ## Results
@@ -255,6 +256,7 @@ In addition, there are a few unexpected items that have a negative impact upon t
 ## Next Steps
 
 We intend to continue this effort by creating and comparing additional models in the hope that we can reduce the test error.  We will try other model, such as a Ridge Regression, Lasso Regression, and an Ensemble technique.
+
 
 
 
