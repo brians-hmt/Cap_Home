@@ -242,7 +242,7 @@ With our model, we see a negative value for averge (ALQ) basement finish type an
 
 Because there is such a high negative correlation ~$8.4k with having a basement half bath and only an ~$3.4k value to having this as an extra half bath, one might consider removing this half bath ... as long as tearing it out doesn't cost more than $5k.  In other words, this might only make sense for an owner to do and not an investor. <br><br>
 
-The Test RMSE above indicates that our price estimate is off by $26.4k on average, which is a fairly significant proportion of the $180k mean housing price of the dataset.  Thus, futher models should be explored including an ensemble model.  The hope is that this accuracy could be improved.
+The Test RMSE above indicates that our price estimate is off by $26.4k on average, which is a fairly significant proportion of the $180k mean housing price of the dataset.  One's instinct would be to assume that this error is an error in the model.  Certainly, futher models should be explored including an ensemble model to see if this error can be reduced.  The hope is that this accuracy could be improved.  However, it is possible that this error is not necessarily an error in the model but an error in how home sellers have priced their properties, an error in the offers that buyers have made, and and error in what offers that sellers have accepted.  The pricing of homes is a human endeavour and is subject to emotion.  These are features that are not easy to identify.  They also represent opportunities that a model such as this can seek to exploit. 
 
 
 ### Evaluation
@@ -264,6 +264,7 @@ In addition, there are a few unexpected items that have a negative impact upon t
 ## Next Steps
 
 We intend to continue this effort by creating and comparing additional models in the hope that we can reduce the test error.  We will try other model, such as a Ridge Regression, Lasso Regression, and an Ensemble technique.
+
 
 
 
