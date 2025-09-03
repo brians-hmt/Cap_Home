@@ -1,14 +1,21 @@
 # What factors have a significant impact upon house prices?
 
-## Overview
+** Author:  Brian Shelton **
+
+## Executive Summary
+
+There are tools like Zillow's Zestimate rating that attempt to give an evaluation or at least a price range to each property.  However, these tools usually lack specific information regarding the houses for which they are providing an estimate.  Using specific knowledge regarding a property under consideration, it should be possible to generate a better estimate.  Professional appraisers attempt to do this.  However, when an offer is made on a house, these appraisers generally try to find evidence to support the offer that the buyer has made.  They do this in order to provide the evidence that the loan originator needs to make the loan.  
+
+The goal with this project was to create a tool / model that a buyer or investor could use to find good purchasing opportunities.
+
+As home purchases are a very personal and emotional decision, it is expected that the actual prices paid will vary considerably from any model.  This "emotional-variance" represents a potential financial opportunity for a buyer or seller.  From the intial modeling performed, there does appear to be significant deviation (RMSE) from what the model predicts.  The expectation is that the addition of more models will give us a better idea of how much of this RMSE is model error and how much is potential buyer opportunity.
 
 This report summarizes the work in the following Jupyter Notebook: <https://github.com/brians-hmt/Cap_Home/blob/main/capstone.ipynb>
 
-### Business Opportunity:
 
-There are tools like Zillow's Zestimate rating that attempt to give an evaluation or at least a price range to each property.  However, these tools usually lack specific information regarding the houses for which they are providing an estimate.  Using specific knowledge regarding a property under consideration, it should be possible to generate a better estimate.  Professional appraisers attempt to do this.  However, when an offer is made on a house, these appraisers generally try to find evidence to support the offer that the buyer has made.  They do this in order to provide the evidence that the loan originator needs to make the loan.  One can hire an appraiser to guess at the fair market value of 
+### Rationale
 
-It would be useful to have a tool / model that a buyer or investor could use to find good deals.
+This question should be important to any real-estate buyer or seller, because it should point to those home features that represent an opportunity for financial benefit.  E.G.  The appearance of quality can significantly drive selling price.  Thus, one might want to buy a house that has good bones but has relatively easy ways to improve either the quality of the house or the appearance of the quality of the house.
 
 
 ### Research Question:
@@ -264,6 +271,7 @@ In addition, there are a few unexpected items that have a negative impact upon t
 ## Next Steps
 
 We intend to continue this effort by creating and comparing additional models in the hope that we can reduce the test error.  We will try other model, such as a Ridge Regression, Lasso Regression, and an Ensemble technique.
+
 
 
 
