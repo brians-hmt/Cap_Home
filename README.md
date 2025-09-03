@@ -106,7 +106,7 @@ The MSSubClass data was an integer value.  However, it indicates the Ames Housin
 
 Distribution plots were made for all categorical (generally nominal) and numeric features.  The plots of nominal data showed significant unbalance in the data.  Most of these plots when sorted by decreasing occurrence looked like either an logarithmic or linear decline, such as the following.  
 
-![alt text](images/Exterior1st Distribution.jpg)
+![alt text](images/ExteriorDistribution.jpg)
 
 Some of these features appeared to be predominantly one value, e.g. Street, Utilities, Condition2, RoofMatl, Heating, and HouseStyle.  Because these were virtually all one value, they would have little value to the modeling.  These columns were dropped.
 
@@ -254,4 +254,5 @@ In addition, there are a few unexpected items that have a negative impact upon t
 ## Next Steps
 
 We intend to continue this effort by creating and comparing additional models in the hope that we can reduce the test error.  We will try other model, such as a Ridge Regression, Lasso Regression, and an Ensemble technique.
+
 
