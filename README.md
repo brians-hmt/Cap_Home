@@ -47,7 +47,7 @@ That view-properties can be determined by their asking price with some accuracy.
 That having a view is a substantial driver of price.
 
 
-## Actual Results
+### Actual Results
 
 We examined the coefficients from the trained models.  The results appear to confirm our earlier suggestion that kitchens above ground have a negative impact upon the sales price.  <br><br>  
 
@@ -64,7 +64,7 @@ Although our dataset has many features that we can evaluate for their impact upo
 We should recommend to the client that we need to get more data to refine our model.  At a minimum,  we should get better representation of those feature values that are of interest.  <br><br>
 
 
-## Report to Client:
+### Report to Client:
 
 My research indicates:
 
@@ -270,6 +270,7 @@ This model was first trained and tested on only the numeric features.  The model
 | Numeric Only	| $23,525		| $28,017 |
 | All Features	| $18,794		| $26,411 |
 | Reduced Feat.	| $18,813    	| $26,403 |
+
 
 
 
